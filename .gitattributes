@@ -1,0 +1,9 @@
+# Normalisation par défaut des fichiers texte.
+* text=auto
+
+# Les scripts exécutés sous WSL doivent garder des fins de ligne LF : en CRLF,
+# bash échoue sur « \r: bad interpreter ».
+*.sh text eol=lf
+
+# Les scripts PowerShell restent en CRLF.
+*.ps1 text eol=crlf

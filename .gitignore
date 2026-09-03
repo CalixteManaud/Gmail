@@ -1,0 +1,13 @@
+# Identifiants — ne jamais versionner
+.env
+secrets/
+
+# État local
+state/
+config/rules.suggested.json
+config/taxonomy.json
+
+# Python
+.venv/
+__pycache__/
+*.pyc
