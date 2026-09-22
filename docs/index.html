@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trieur Gmail</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem;
+    font: 1rem/1.65 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  .sub { opacity: .7; margin-top: 0; }
+  h2 { font-size: 1.1rem; margin-top: 2.25rem; }
+  code { font-size: .9em; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #8884; opacity: .7; font-size: .9rem; }
+</style>
+</head>
+<body>
+
+<h1>Trieur Gmail</h1>
+<p class="sub">Outil personnel de classement automatique d'une boîte Gmail.</p>
+
+<h2>Ce que fait l'application</h2>
+<p>
+  Elle classe les fils de discussion d'une boîte Gmail dans les libellés que son
+  propriétaire a créés lui-même. Elle ne crée jamais de libellé et ne supprime
+  aucun message : elle se contente d'appliquer des étiquettes existantes, et
+  éventuellement de retirer un fil de la boîte de réception.
+</p>
+
+<h2>Comment le classement est décidé</h2>
+<p>
+  Deux étages. D'abord des règles locales — domaine de l'expéditeur, en-tête
+  <code>List-Id</code>, mots-clés — qui traitent la majorité du volume sans
+  aucun appel extérieur. Ensuite, pour les fils que ces règles n'ont pas
+  tranchés, un modèle de langage reçoit l'expéditeur, l'objet et un extrait, et
+  propose un libellé parmi la liste existante.
+</p>
+
+<h2>Portée</h2>
+<p>
+  Application à usage strictement personnel, utilisée par son seul auteur sur sa
+  propre boîte. Elle n'est proposée à aucun tiers et ne collecte aucune donnée
+  d'autrui.
+</p>
+
+<footer>
+  <a href="privacy.html">Règles de confidentialité</a>
+</footer>
+
+</body>
+</html>

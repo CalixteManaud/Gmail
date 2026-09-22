@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Règles de confidentialité — Trieur Gmail</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem;
+    font: 1rem/1.65 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  .sub { opacity: .7; margin-top: 0; }
+  h2 { font-size: 1.1rem; margin-top: 2.25rem; }
+  code { font-size: .9em; }
+  ul { padding-left: 1.2rem; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #8884; opacity: .7; font-size: .9rem; }
+</style>
+</head>
+<body>
+
+<h1>Règles de confidentialité</h1>
+<p class="sub">Trieur Gmail — dernière mise à jour : 22 septembre 2026</p>
+
+<h2>Qui traite les données</h2>
+<p>
+  Trieur Gmail est une application personnelle, développée et utilisée par une
+  seule personne sur sa propre boîte Gmail. Elle n'est pas distribuée et ne
+  traite les données d'aucun autre utilisateur. Contact :
+  <a href="mailto:manaud57@gmail.com">manaud57@gmail.com</a>.
+</p>
+
+<h2>Données auxquelles l'application accède</h2>
+<p>
+  L'application demande l'autorisation Google
+  <code>https://www.googleapis.com/auth/gmail.modify</code>. Elle lit uniquement,
+  pour chaque fil de discussion :
+</p>
+<ul>
+  <li>l'adresse de l'expéditeur et du destinataire ;</li>
+  <li>l'objet et la date ;</li>
+  <li>l'en-tête <code>List-Id</code> lorsqu'il existe ;</li>
+  <li>l'extrait de prévisualisation fourni par Gmail ;</li>
+  <li>la liste des libellés déjà appliqués.</li>
+</ul>
+<p>
+  Le corps des messages n'est jamais téléchargé ni lu. Aucune pièce jointe n'est
+  ouverte.
+</p>
+
+<h2>Ce que l'application modifie</h2>
+<p>
+  Elle applique des libellés existants et peut retirer un fil de la boîte de
+  réception. Elle ne crée pas de libellé, n'envoie aucun message, et ne supprime
+  jamais de message.
+</p>
+
+<h2>Où les données sont conservées</h2>
+<p>
+  Tout est stocké localement, sur l'ordinateur de l'utilisateur : le jeton
+  d'accès Google, le curseur de synchronisation, et des rapports de classement
+  contenant expéditeurs et objets. Aucune base de données distante, aucun
+  serveur, aucune sauvegarde en ligne. Les rapports et journaux sont conservés
+  au plus 30 jours.
+</p>
+
+<h2>Transmission à un tiers</h2>
+<p>
+  Lorsque les règles locales ne suffisent pas à classer un fil, ses métadonnées
+  — expéditeur, objet, extrait — sont transmises à l'API d'Anthropic afin
+  d'obtenir une proposition de libellé. Cette fonction est facultative et peut
+  être désactivée, l'application fonctionnant alors uniquement sur ses règles
+  locales. Aucune autre donnée n'est transmise à qui que ce soit, et rien n'est
+  vendu, loué ni partagé à des fins publicitaires ou d'analyse.
+</p>
+
+<h2>Conservation et retrait de l'accès</h2>
+<p>
+  L'autorisation peut être révoquée à tout moment depuis
+  <a href="https://myaccount.google.com/permissions">la page des accès du compte
+  Google</a>. La suppression du dossier local de l'application efface le jeton
+  et l'intégralité des données conservées.
+</p>
+
+<footer>
+  <a href="index.html">Retour</a>
+</footer>
+
+</body>
+</html>
