@@ -11,3 +11,4 @@ config/taxonomy.json
 .venv/
 __pycache__/
 *.pyc
+config/rules.json

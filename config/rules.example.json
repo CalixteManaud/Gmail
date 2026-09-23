@@ -1,0 +1,27 @@
+{
+  "🎬 Abonnements & Streaming": {
+    "domains": ["members.netflix.com", "twitch.tv", "info.spotify.com"],
+    "keywords": ["abonnement", "renouvellement"]
+  },
+  "💳 Banques & Paiements": {
+    "domains": ["exemple-banque.fr", "paypal.fr"],
+    "keywords": ["relevé", "prélèvement", "virement"]
+  },
+  "💼 Emplois & Alertes": {
+    "domains": ["e.linkedin.com", "emails.exemple-jobboard.fr"],
+    "keywords": ["candidature", "offre d'emploi", "entretien"]
+  },
+  "📦 Commandes": {
+    "domains": ["amazon.fr", "chronopost.fr"],
+    "keywords": ["commande", "colis", "livraison", "expédié"],
+    "list_ids": ["newsletter.exemple.fr"]
+  },
+  "🔐 Sécurité & Connexions": {
+    "domains": ["accounts.google.com"],
+    "keywords": ["nouvelle connexion", "code de vérification", "mot de passe"]
+  },
+  "🧾 Factures & Contrats": {
+    "domains": ["exemple-energie.fr", "exemple-operateur.fr"],
+    "keywords": ["facture", "échéance", "contrat"]
+  }
+}

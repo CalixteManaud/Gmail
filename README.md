@@ -65,6 +65,14 @@ d'historique : tu peux le relancer autant de fois que nécessaire.
 
 ## Format des règles
 
+`config/rules.json` contient tes domaines réels et n'est pas versionné.
+Pars de `config/rules.example.json` :
+
+```bash
+cp config/rules.example.json config/rules.json
+```
+
+
 ```json
 {
   "📦 Commandes": {
