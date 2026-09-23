@@ -7,3 +7,6 @@
 
 # Les scripts PowerShell restent en CRLF.
 *.ps1 text eol=crlf
+
+# GitHub Pages lit ce fichier tel quel : il doit rester en LF.
+docs/CNAME text eol=lf
