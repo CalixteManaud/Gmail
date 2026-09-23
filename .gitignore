@@ -12,3 +12,6 @@ config/taxonomy.json
 __pycache__/
 *.pyc
 config/rules.json
+
+# Archive generee pour depot manuel
+docs/trieur-gmail-site.zip
